@@ -47,6 +47,38 @@ header h2 {
     font-size: 1.5em;   
     font-weight: normal; 
 }
+
+/* Estilos para la Navegación en el Header */
+header nav {
+    margin-top: 20px;
+}
+
+header nav ul {
+    list-style-type: none; 
+    padding: 0;        
+    text-align: center; 
+}
+
+header nav ul li {
+    display: inline-block; 
+    margin: 0 10px;   
+}
+
+header nav ul li a {
+    color: var(--color-texto-claro); 
+    text-decoration: none;     
+    font-weight: bold;      
+    padding: 5px 10px;      
+    border-radius: 5px;          
+    transition: background-color 0.3s ease; 
+}
+
+header nav ul li a:hover,
+header nav ul li a:focus { 
+    background-color: rgba(255, 255, 255, 0.2); 
+    color: #ffffff; 
+}
+
 /* Estilos para las Secciones Generales */
 main section {
     padding: 40px 20px;
