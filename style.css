@@ -1,0 +1,196 @@
+/* Reset básico y box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Montserrat;
+    line-height: 1.6;
+    background-color: var(--color-fondo-azul-claro); 
+    color: var(--color-texto-oscuro);
+    margin: 20px; 
+}
+/* Variables de Color */
+:root {
+    --color-primario-azul: #005f73;   
+    --color-secundario-azul: #20233b; 
+    --color-fondo-azul-claro: #86a3f2; 
+    --color-texto-claro: #e9ecef;    
+    --color-texto-oscuro: #012346;  
+    --color-acento: #ee9b00;          
+}
+/* Estilos para el Header */
+header {
+    background-color: var(--color-secundario-azul); 
+    color: var(--color-texto-claro);            
+    padding: 40px 20px;                   
+    text-align: center;                        
+}
+
+header img {
+    width: 150px; 
+    height: 150px; 
+    border-radius: 50%;
+    object-fit: cover; 
+    margin-bottom: 20px; 
+    border: 3px solid var(--color-fondo-azul-claro); 
+}
+
+header h1 {
+    margin-bottom: 10px; 
+    font-size: 2.5em;   
+}
+
+header h2 {
+    font-size: 1.5em;   
+    font-weight: normal; 
+}
+/* Estilos para las Secciones Generales */
+main section {
+    padding: 40px 20px;
+    margin-bottom: 20px; 
+}
+
+main section h2 {
+    text-align: center;  
+    margin-bottom: 20px; 
+    color: var(--color-primario-azul); 
+    font-size: 2em;     
+}
+
+/* Estilos Específicos para la Sección "Sobre Mí" */
+#sobre-mi {
+    background-color: #ffffff; 
+   
+}
+
+#sobre-mi p {
+    text-align: justify; 
+    max-width: 800px;    
+    margin-left: auto;   
+    margin-right: auto;
+    color: var(--color-texto-oscuro); 
+}
+/* Estilos para las Secciones Generales dentro de <main> */
+main section {
+    padding: 40px 20px; 
+    margin-bottom: 30px; 
+    background-color: #ffffff; 
+    border-radius: 8px;    
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+}
+
+/* Estilos para los títulos H2 dentro de las secciones de <main> */
+main section h2 {
+    text-align: center;
+    margin-bottom: 30px; 
+    color: var(--color-primario-azul);
+    font-size: 2em;
+}
+
+/* Estilos Específicos para el párrafo de la Sección "Sobre Mí" */
+#sobre-mi p {
+    text-align: justify;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-texto-oscuro);
+    line-height: 1.8; 
+}
+
+/* Estilos para los <article> dentro de Experiencia, Formación y Certificaciones */
+main section article {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0; 
+}
+
+/* Quitar borde y margen extra del último <article> en una sección */
+main section article:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* Estilos para los títulos H3 dentro de los <article> */
+main section article h3 {
+    color: var(--color-secundario-azul);
+    margin-bottom: 8px; 
+    font-size: 1.3em; 
+}
+
+/* Estilos para los párrafos descriptivos (empresa, fechas, institución) dentro de los <article> */
+main section article p {
+    margin-bottom: 12px; 
+    font-size: 0.95em; 
+    color: #495057;  
+}
+
+/* Resaltar el nombre de la empresa/institución */
+main section article p strong {
+    color: var(--color-texto-oscuro); 
+}
+
+/* Estilos para las listas (<ul>) dentro de las secciones */
+main section ul {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+/* Estilos para los ítems de lista (<li>) */
+main section ul li {
+    margin-bottom: 10px;
+    line-height: 1.7; 
+    color: #343a40; 
+}
+
+/* Estilos específicos para la lista de la sección Contacto (para enlaces) */
+#contacto ul {
+    list-style-type: none; 
+    padding-left: 0;     
+    text-align: center;  
+}
+
+#contacto ul li {
+    margin-bottom: 15px; 
+}
+
+#contacto ul li strong {
+    display: block; 
+    margin-bottom: 5px;
+    color: var(--color-primario-azul);
+}
+
+#contacto a {
+    color: var(--color-secundario-azul);
+    text-decoration: none;
+}
+
+#contacto a:hover {
+    text-decoration: underline; 
+    color: var(--color-primario-azul); 
+}
+
+/* Estilos para el Footer */
+footer {
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 40px;
+    background-color: var(--color-primario-azul); 
+    color: var(--color-texto-claro); 
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--color-acento); 
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
